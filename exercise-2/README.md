@@ -9,4 +9,4 @@ Follow these steps to complete the exercise:
 - Write a short paragraph, and then show your plot in your Markdown file
 - Knit your HTML file
 - Add and commit your changes to Git (on your terminal) and push them to GitHub
-- View your new interactive website at `YOUR-USERNAME.github.io/m12-plotly/exercise-2` (assuming that you have set the `master` branch to be hosted, as described in `exercise-1`)
+- View your new interactive website at `username-placeholder.github.io/m12-plotly/exercise-2` (assuming that you have set the `master` branch to be hosted, as described in `exercise-1`)
