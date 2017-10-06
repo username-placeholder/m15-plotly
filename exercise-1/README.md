@@ -19,4 +19,4 @@ Follow these steps to complete the exercise:
 ![settings screenshot](imgs/settings.png)
 - Scroll down to the **GitHub Pages** section, and select your **master branch** to be the hosted website
 ![GitHub pages screenshot](imgs/gh-pages.png)
-- View your new interactive website at `YOUR-USERNAME.github.io/m15-plotly/exercise-1`
+- View your new interactive website at `username-placeholder.github.io/m15-plotly/exercise-1`

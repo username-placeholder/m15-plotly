@@ -12,7 +12,7 @@ library(plotly)
 
 ## Write a short paragraph, and then show your plot in your Markdown file:
 
-This is my paragraph.  It is supposed to be short.  A paragraph has at least four sentences, I was taught.  This is the fourth sentence, and this is the plot:
+This is my paragraph.  It is supposed to be short.  A paragraph has at least four sentences, I was taught.  So, this is my fourth sentence and this is my plot:
 
 ```{r, echo=FALSE}
 df <- read.csv("https://raw.githubusercontent.com/plotly/datasets/master/2011_us_ag_exports.csv")
