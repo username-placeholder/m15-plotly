@@ -1,0 +1,55 @@
+---
+title: "Exercise 2"
+author: "Victor Ying"
+date: "10/6/2017"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+library(plotly)
+library(tidyverse)
+```
+
+##Follow these steps to complete the exercise:
+
+* **As in previous exercises, you should fork and clone this repository:**
+Done.
+
+* **Create an new R Markdown (.Rmd) file in this project called index.Rmd (so that we can easily create a website):**
+Done.
+
+* **Using the available documentation, create a chart of your choice, and add annotations using Plotly (in a code block):**
+```
+p <- plot_ly(starwars2, y = ~mass, color = I("dodger blue"),
+             alpha = 0.5, boxpoints = "outliers")
+p1 <- p %>% add_boxplot(x = "Species")
+p2 <- p %>% add_boxplot(x = ~species)
+subplot(
+  p1, p2, shareY = TRUE,
+  margin = 1
+) %>% hide_legend()
+```
+
+* **Write a short paragraph, and then show your plot in your Markdown file **  
+Okay, here is my paragraph.  I don't have much to say.  I'm just trying to write four complete sentences.  I hope you like my Starwars plot:
+```{r, echo=FALSE}
+starwars2 <- filter(starwars, name!="Jabba Desilijic Tiure")
+p <- plot_ly(starwars2, y = ~mass, color = I("dodger blue"),
+             alpha = 0.5, boxpoints = "outliers")
+p1 <- p %>% add_boxplot(x = "Species")
+p2 <- p %>% add_boxplot(x = ~species)
+subplot(
+  p1, p2, shareY = TRUE,
+  widths = c(.3, .7), margin = 1
+) %>% hide_legend()
+```
+
+
+* **Knit your HTML file **  
+Done.
+
+* **Add and commit your changes to Git (on your terminal) and push them to GitHub:**  
+Okay.
+
+* **View your new interactive website at [username-placeholder.github.io/m12-plotly/exercise-2](http://username-placeholder.github.io/m12-plotly/exercise-2) (assuming that you have set the  master branch to be hosted, as described in exercise-1)**
